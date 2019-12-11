@@ -6,9 +6,12 @@ import CoordinatesButton from './components/CoordinatesButton';
 import DelayedButton from './components/DelayedButton';
 
 ReactDOM.render(
+
+
   <div>
-    <CoordinatesButton onReceiveCoordinates={ mouseCoordinates => console.log(mouseCoordinates) } />
-    <DelayedButton onDelayedClick={ event => console.log(event) } delay={1500} />
+    <CoordinatesButton onReceiveCoordinates={ mouse => console.log(mouse) } />
+    <DelayedButton onDelayedClick={ event => console.log(event) } delay={3000} />
   </div>,
+
   document.getElementById('global')
 );
